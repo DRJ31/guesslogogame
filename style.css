@@ -1,0 +1,94 @@
+body{
+	margin: 0;
+	background-color: #f9f8f8;
+	padding: 0;
+	height: 100%;
+}
+
+#bg{
+	position: absolute;
+	z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+.gameframe{
+	position: absolute;
+	height: 50%;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 40%;
+	border: 5px solid #1486fa;
+	background-color: white;
+}
+
+.left{
+	width: 47%;
+	margin-top: 1%;
+	float: left;
+	margin-left: 2%;
+	border: 1px solid #eee;
+}
+
+.right{
+	width: 47%;
+	margin-top: 1%;
+	float: right;
+	margin-left: 2%;
+	border: 1px solid #eee;
+}
+
+.question{
+	color: white;
+	position:absolute;
+	margin-top: 25%;
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+}
+
+#getpack, #count, #result0, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #q2, #q3, #q4, #q5, #q6, #q7, #q8, #q9{
+	display: none;
+}
+
+.alert{
+	position: absolute;
+	height: 60%;
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 35%;
+	z-index: 10;
+	display: none;
+}
+
+.button{
+	position: absolute;
+	bottom: 70px;
+	z-index: 11;
+	width: 40%;
+	margin-left: 30%;
+}
+
+form{
+	position: absolute;
+	width: 80%;
+	margin-left: 10%;
+	bottom: 160px;
+}
+
+#getpack{
+	overflow: auto;
+}
+
+.phone{
+	color: #392800;
+	font-family: FZYaoti;
+}
+
+.code{
+	border-radius: 2px;
+	border: 1px solid black;
+	width: 20%;
+	height: 20px;
+	float: right;
+}

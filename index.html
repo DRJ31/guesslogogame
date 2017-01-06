@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1, minimum-scale=1, maximum-scale=1, user-scale=1, userscalable=no">
+	<title>Guess Logo</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+<script src="game.js"></script>
+</head>
+<body>
+<p id="count">0</p>
+<div class="alert" id="result0">
+<img src="img/0.png" width="100%">
+<div class="button">
+<img src="img/again.png" width="100%" onclick="again()" />
+</div>
+</div>
+<div class="alert" id="result1">
+<img src="img/11.png" width="100%">
+<div class="button">
+<img src="img/again.png" width="100%" onclick="again()" />
+</div>
+</div>
+<div class="alert" id="result2">
+<img src="img/22.png" width="100%">
+<div class="button">
+<img src="img/again.png" width="100%" onclick="again()" />
+</div>
+</div>
+<div class="alert" id="result3">
+<img src="img/33.png" width="100%">
+<div class="button">
+<img src="img/again.png" width="100%" onclick="again()" />
+</div>
+</div>
+<div class="alert" id="result4">
+<img src="img/44.png" width="100%">
+<div class="button">
+<img src="img/again.png" width="100%" onclick="again()" />
+</div>
+</div>
+<div class="alert" id="result5">
+<img src="img/55.png" width="100%">
+<div class="button">
+<img src="img/getpack.png" width="100%" onclick="getpack()" />
+</div>
+</div>
+<div class="alert" id="result6">
+<img src="img/66.png" width="100%">
+<div class="button">
+<img src="img/getpack.png" width="100%" onclick="getpack()" />
+</div>
+</div>
+<div class="alert" id="result7">
+<img src="img/77.png" width="100%">
+<div class="button">
+<img src="img/getpack.png" width="100%" onclick="getpack()" />
+</div>
+</div>
+<div class="alert" id="result8">
+<img src="img/88.png" width="100%">
+<div class="button">
+<img src="img/getpack.png" width="100%" onclick="getpack()" />
+</div>
+</div>
+<div class="alert" id="result9">
+<img src="img/all.png" width="100%">
+<div class="button">
+<img src="img/getpack.png" width="100%" onclick="getpack()" />
+</div>
+</div>
+<div class="alert" id="getpack">
+<img src="img/redpack.png" width="100%">
+<form>
+	<P class="phone">手机号：<input style="border-radius: 2px;width: 60%;border: 1px solid black;height: 20px;" type="text" name="" placeholder="请输入您的手机号码"></P>
+	<P class="phone">验证码：<input style="border-radius: 2px;width: 40%;border: 1px solid black;height: 20px;" type="text" name="" placeholder="请输入图形验证码"></P>
+	<div class="code">
+	<img src="img/code.png" width="100%"/>
+	</div>
+</form>
+<div class="button">
+<img src="img/getpack.png" width="100%"/>
+</div>
+</div>
+<div id="bg">
+<img src="img/bg.png" width="100%" />
+</div>
+<div class="alert" id="right1">
+<img src="img/right.png" width="100%">
+<div class="button" style="bottom:90px">
+<img src="img/next.png" width="100%" onclick="r1()" />
+</div>
+</div>
+<div class="alert" id="right2">
+<img src="img/right.png" width="100%">
+<div class="button" style="bottom:90px">
+<img src="img/next.png" width="100%" onclick="r2()" />
+</div>
+</div>
+<div class="alert" id="right3">
+<img src="img/right.png" width="100%">
+<div class="button" style="bottom:90px">
+<img src="img/next.png" width="100%" onclick="r3()" />
+</div>
+</div>
+<div class="alert" id="right4">
+<img src="img/right.png" width="100%">
+<div class="button" style="bottom:90px">
+<img src="img/next.png" width="100%" onclick="r4()" />
+</div>
+</div>
+<div class="alert" id="right5">
+<img src="img/right.png" width="100%">
+<div class="button" style="bottom:90px">
+<img src="img/next.png" width="100%" onclick="r5()" />
+</div>
+</div>
+<div class="alert" id="right6">
+<img src="img/right.png" width="100%">
+<div class="button" style="bottom:90px">
+<img src="img/next.png" width="100%" onclick="r6()" />
+</div>
+</div>
+<div class="alert" id="right7">
+<img src="img/right.png" width="100%">
+<div class="button" style="bottom:90px">
+<img src="img/next.png" width="100%" onclick="r7()" />
+</div>
+</div>
+<div class="alert" id="right8">
+<img src="img/right.png" width="100%">
+<div class="button" style="bottom:90px">
+<img src="img/next.png" width="100%" onclick="r8()" />
+</div>
+</div>
+<div class="alert" id="right9">
+<img src="img/right.png" width="100%">
+<div class="button" style="bottom:90px">
+<img src="img/next.png" width="100%" onclick="last()" />
+</div>
+</div>
+<div class="alert" id="q1a">
+<img src="img/googlew.png" width="100%"/>
+<div class="button">
+<img src="img/next.png" width="100%" onclick="quit1()" />
+</div>
+</div>
+<div id="q1">
+<div class="question">
+1.下列四个图标中，哪个是谷歌的标志？
+</div>
+<div class="gameframe">
+<div class="left">
+<img src="img/googler.png" width="100%" onclick="right1()" />
+</div>
+<div class="right">
+<img src="img/googlew1.png" width="100%" onclick="qw1()" />
+</div>
+<div class="left">
+<img src="img/googlew2.png" width="100%" onclick="qw1()" />
+</div>
+<div class="right">
+<img src="img/googlew3.png" width="100%" onclick="qw1()" />
+</div>
+</div>
+</div>
+<div class="alert" id="q2a">
+<img src="img/googlew.png" width="100%"/>
+<div class="button">
+<img src="img/next.png" width="100%" onclick="quit2()" />
+</div>
+</div>
+<div id="q2">
+<div class="question">
+2.下列四个图标中，哪个是苹果的标志？
+</div>
+<div class="gameframe">
+<div class="left">
+<img src="img/applew3.png" width="100%" onclick="qw2()" />
+</div>
+<div class="right">
+<img src="img/applew1.png" width="100%" onclick="qw2()" />
+</div>
+<div class="left">
+<img src="img/applew2.png" width="100%" onclick="qw2()" />
+</div>
+<div class="right">
+<img src="img/appler.png" width="100%" onclick="right2()" />
+</div>
+</div>
+</div>
+<div class="alert" id="q3a">
+<img src="img/qqw.png" width="100%"/>
+<div class="button">
+<img src="img/next.png" width="100%" onclick="quit3()" />
+</div>
+</div>
+<div id="q3">
+<div class="question">
+3.下列四个图标中，哪个是QQ的标志？
+</div>
+<div class="gameframe">
+<div class="left">
+<img src="img/qqr.png" width="100%" onclick="right3()" />
+</div>
+<div class="right">
+<img src="img/qqw1.png" width="100%" onclick="qw3()" />
+</div>
+<div class="left">
+<img src="img/qqw2.png" width="100%" onclick="qw3()" />
+</div>
+<div class="right">
+<img src="img/qqw3.png" width="100%" onclick="qw3()" />
+</div>
+</div>
+</div>
+<div class="alert" id="q4a">
+<img src="img/microw.png" width="100%"/>
+<div class="button">
+<img src="img/next.png" width="100%" onclick="quit4()" />
+</div>
+</div>
+<div id="q4">
+<div class="question">
+4.下列四个图标中，哪个是微软的标志？
+</div>
+<div class="gameframe">
+<div class="left">
+<img src="img/microw1.png" width="100%" onclick="qw4()" />
+</div>
+<div class="right">
+<img src="img/micror.png" width="100%" onclick="right4()" />
+</div>
+<div class="left">
+<img src="img/microw2.png" width="100%" onclick="qw4()"/>
+</div>
+<div class="right">
+<img src="img/microw3.png" width="100%" onclick="qw4()"/>
+</div>
+</div>
+</div>
+<div class="alert" id="q5a">
+<img src="img/lenovow.png" width="100%"/>
+<div class="button">
+<img src="img/next.png" width="100%" onclick="quit5()" />
+</div>
+</div>
+<div id="q5">
+<div class="question">
+5.下列四个图标中，哪个是联想的标志？
+</div>
+<div class="gameframe">
+<div class="left">
+<img src="img/lenovow3.png" width="100%" onclick="qw5()" />
+</div>
+<div class="right">
+<img src="img/lenovow1.png" width="100%" onclick="qw5()"/>
+</div>
+<div class="left">
+<img src="img/lenovow2.png" width="100%" onclick="qw5()"/>
+</div>
+<div class="right">
+<img src="img/lenovor.png" width="100%" onclick="right5()" />
+</div>
+</div>
+</div>
+<div class="alert" id="q6a">
+<img src="img/unicomw.png" width="100%"/>
+<div class="button">
+<img src="img/next.png" width="100%" onclick="quit6()" />
+</div>
+</div>
+<div id="q6">
+<div class="question">
+6.下列四个图标中，哪个是中国联通的标志？
+</div>
+<div class="gameframe">
+<div class="left">
+<img src="img/unicomw2.png" width="100%"  onclick="qw6()" />
+</div>
+<div class="right">
+<img src="img/unicomw1.png" width="100%" onclick="qw6()" />
+</div>
+<div class="left">
+<img src="img/unicomr.png" width="100%" onclick="right6()" />
+</div>
+<div class="right">
+<img src="img/unicomw3.png" width="100%" onclick="qw6()" />
+</div>
+</div>
+</div>
+<div class="alert" id="q7a">
+<img src="img/bankw.png" width="100%"/>
+<div class="button">
+<img src="img/next.png" width="100%" onclick="quit7()" />
+</div>
+</div>
+<div id="q7">
+<div class="question">
+7.下列四个图标中，哪个是中国工商银行的标志？
+</div>
+<div class="gameframe">
+<div class="left">
+<img src="img/bankr.png" width="100%" onclick="right7()" />
+</div>
+<div class="right">
+<img src="img/bankw1.png" width="100%" onclick="qw7()" />
+</div>
+<div class="left">
+<img src="img/bankw2.png" width="100%" onclick="qw7()" />
+</div>
+<div class="right">
+<img src="img/bankw3.png" width="100%" onclick="qw7()" />
+</div>
+</div>
+</div>
+<div class="alert" id="q8a">
+<img src="img/redbullw.png" width="100%"/>
+<div class="button">
+<img src="img/next.png" width="100%" onclick="quit8()" />
+</div>
+</div>
+<div id="q8">
+<div class="question">
+8.下列四个图标中，哪个是红牛的标志？
+</div>
+<div class="gameframe">
+<div class="left">
+<img src="img/redbullw1.png" width="100%" onclick="qw8()" />
+</div>
+<div class="right">
+<img src="img/redbullr.png" width="100%" onclick="right8()" />
+</div>
+<div class="left">
+<img src="img/redbullw2.png" width="100%" onclick="qw8()"/>
+</div>
+<div class="right">
+<img src="img/redbullw3.png" width="100%" onclick="qw8()"/>
+</div>
+</div>
+</div>
+<div class="alert" id="q9a">
+<img src="img/mobilew.png" width="100%"/>
+<div class="button">
+<img src="img/next.png" width="100%" onclick="last()" />
+</div>
+</div>
+<div id="q9">
+<div class="question">
+9.下列四个图标中，哪个是中国移动的标志？
+</div>
+<div class="gameframe">
+<div class="left">
+<img src="img/mobilew3.png" width="100%" onclick="qw9()" />
+</div>
+<div class="right">
+<img src="img/mobilew1.png" width="100%" onclick="qw9()"/>
+</div>
+<div class="left">
+<img src="img/mobiler.png" width="100%" onclick="right9()"/>
+</div>
+<div class="right">
+<img src="img/mobilew3.png" width="100%" onclick="qw9()"/>
+</div>
+</div>
+</div>
+</body>
+</html>
