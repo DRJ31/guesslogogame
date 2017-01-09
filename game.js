@@ -45,6 +45,7 @@ function getpack(){
 function right9(){
 	var element1=document.getElementById("right9");
 	element1.style.display="block";
+	count3=++count3;
 }
 
 function last(){
@@ -91,10 +92,9 @@ function last(){
 		var element=document.getElementById("result8");
 		element.style.display="block";
 		break;
-		case 9:
+		default:
 		var element=document.getElementById("result9");
 		element.style.display="block";
-		break;
 
 	}
 }
